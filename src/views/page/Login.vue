@@ -6,7 +6,7 @@
           <vs-card>
             <vs-row vs-w="12">
               <vs-col vs-xs="hidden" vs-sm="hidden" vs-lg="6" vs-align="center">
-                <!-- <img src="@/assets/images/login.png" alt="login"> -->
+                <img src="@/assets/images/login.png" alt="login">
               </vs-col>
             </vs-row>
             <!-- <div slot="header">
