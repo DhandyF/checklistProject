@@ -2,28 +2,24 @@
   <div>
     <div id="container">
       <vs-row vs-justify="center" vs-align="center" vs-w="12">
-        <vs-col type="flex" vs-justify="center" vs-align="center" vs-xs="12" vs-sm="8" vs-lg="8">
+        <vs-col vs-xs="12" vs-sm="5" vs-lg="5">
           <vs-card>
             <vs-row vs-w="12">
-              <vs-col vs-xs="hidden" vs-sm="hidden" vs-lg="6" vs-align="center">
-                <img src="@/assets/images/login.png" alt="login">
+              <vs-col class="mb-2" vs-xs="12" vs-sm="12" vs-lg="12">
+                <h2>Login</h2>
               </vs-col>
             </vs-row>
-            <!-- <div slot="header">
-              <h3>
-                Hello world !
-              </h3>
-            </div>
-            <div>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-            </div>
-            <div slot="footer">
-              <vs-row vs-justify="flex-end">
-                <vs-button type="gradient" color="danger" icon="favorite"></vs-button>
-                <vs-button color="primary" icon="turned_in_not"></vs-button>
-                <vs-button color="rgb(230,230,230)" color-text="rgb(50,50,50)" icon="settings"></vs-button>
-              </vs-row>
-            </div> -->
+            <vs-row>
+              <vs-col class="d-flex flex-column" vs-xs="12" vs-sm="12" vs-lg="12">
+                <vs-input class="mb-1 mx-auto w-50" icon="mail" label-placeholder="Email"></vs-input>
+                <vs-input class="mb-1 mx-auto w-50" icon="lock" label-placeholder="Password" type="password"></vs-input>
+                <vs-divider />
+                <div>
+                  <vs-button class="w-50 mb-2" color="primary" type="filled">Login</vs-button>
+                  <p class="mb-1 register">Register</p>
+                </div>
+              </vs-col>
+            </vs-row>
           </vs-card>
         </vs-col>
       </vs-row>
@@ -48,5 +44,16 @@ export default {
     padding: 0;
     height: 657px;
     // align-items: center;
+  }
+  .form-login{
+    flex-direction: column;
+  }
+  .register{
+    cursor: pointer;
+    color: lightgray;
+  }
+  .register:hover{
+    text-decoration: underline;
+    color: gray;
   }
 </style>
